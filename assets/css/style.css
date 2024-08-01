@@ -66,7 +66,8 @@ main {
 .main > h5 + p,
 .main > h5 + p + p,
 .main > p + ul,
-.main > ol + p {
+.main > ol + p,
+.novità > p:nth-child(2) {
   padding-top: 12.5px;
   padding-bottom: 12.5px;
 }
@@ -143,4 +144,69 @@ table {
 
 .main > table + p a {
   color: #16a7cc;
+}
+
+.main iframe {
+  border-radius: 20px;
+}
+
+.novità {
+  margin-top: 25px;
+  padding-top: 25px;
+  border: #e4e2e4 0.5px solid;
+  background-color: #e4e2e4;
+}
+.novità > p:nth-child(1),
+section h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+}
+
+.novità > p:nth-child(2) {
+  text-align: left;
+  padding-inline: 10px;
+}
+
+.novità > div {
+  padding-left: 35px;
+  margin-bottom: 12.5px;
+}
+
+.bottone {
+  background-color: #3467ca;
+  color: white;
+}
+section h3 {
+  padding-bottom: 25px;
+}
+
+section > div {
+  border: #e4e2e4 0.5px solid;
+  background-color: #e4e2e4;
+  padding-block: 12.5px;
+  margin-bottom: 12.5px;
+  padding-inline: 10px;
+}
+
+section div a {
+  color: #16a7cc;
+}
+
+section div p:nth-child(3) {
+  text-align: right;
+}
+
+footer {
+  border: #055267 solid;
+  background-color: #055267;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding-inline: 10px;
+  padding-block: 10px;
+}
+
+footer a {
+  color: #ef0fdc;
 }
