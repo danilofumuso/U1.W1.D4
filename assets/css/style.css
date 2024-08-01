@@ -1,25 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-image: url(./sfondo.png);
+  font-family: "Poppins", sans-serif;
+  background-image: url(../img/sfondo.png);
+  background-position-y: -256px;
+  background-position-x: -109px;
   line-height: normal;
 }
 
+.wrapper {
+  padding: 20px;
+}
+
 .home {
+  height: 300px;
   text-align: center;
   border: #0088aa solid;
   background-color: #0088aa;
-  margin-block: 1em;
+  margin-bottom: 1rem;
 }
 .home img {
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0rem;
 }
 
 .home h1 {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .home > div + div {
@@ -38,7 +45,102 @@ body {
 }
 
 main {
-  text-align: center;
+  font-size: 17px;
+  padding-inline: 20px;
+  text-align: left;
   border: white solid;
   background-color: white;
+}
+
+.main h2 {
+  padding-block: 20px;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.main h5 {
+  color: #94aa99;
+}
+
+.main > h5 + p,
+.main > h5 + p + p,
+.main > p + ul,
+.main > ol + p {
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+}
+
+.main p span,
+.main > ul + p + p span {
+  color: #b5417d;
+}
+
+.main ul {
+  list-style-type: disc;
+}
+
+.main > p + ul {
+  padding-left: 35px;
+}
+
+.main > p + ul span {
+  border: #a6b1a8 solid 0.5px;
+  background-color: #e4e7e8;
+  border-radius: 6px;
+}
+.main > ul + p {
+  padding-top: 12.5px;
+}
+.main > ul + p + p {
+  padding-bottom: 12.5px;
+}
+
+.main ol {
+  list-style-type: decimal;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  padding-left: 35px;
+}
+
+table {
+  margin-inline: auto;
+}
+
+.main table caption {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.main table tr,
+.main table td,
+.main table th {
+  border: transparent 0.5px solid;
+  text-align: center;
+}
+
+.main table thead {
+  background-color: #3a68ca;
+}
+
+.main tbody tr:nth-of-type(2n + 2) {
+  background-color: #f2f2f2;
+}
+
+.main table td,
+.main table th {
+  padding-block: 0.5rem;
+  min-width: 100px;
+}
+
+.main tfoot {
+  border-bottom: #3a68ca 2px solid;
+}
+
+.main > table + p {
+  padding-block: 25px;
+}
+
+.main > table + p a {
+  color: #16a7cc;
 }
