@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(./sfondo.png);
+  line-height: normal;
+}
+
+.home {
+  text-align: center;
+  border: #0088aa solid;
+  background-color: #0088aa;
+  margin-block: 1em;
+}
+.home img {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.home h1 {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.home > div + div {
+  padding-bottom: 1rem;
+}
+
+.home h1,
+.home p {
+  color: white;
+  text-transform: uppercase;
+}
+
+.home i {
+  width: 20px;
+  font-size: 10px;
+}
+
+main {
+  text-align: center;
+  border: white solid;
+  background-color: white;
+}
